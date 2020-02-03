@@ -2680,7 +2680,7 @@ ul.wmuSliderPagination {
 	}
 	.container {
 		width: 815px;
-		height: auto;
+		height: 350px;
 	}
 	.w3ls_logo_products_right1:nth-child(3) {
 		margin-right: 1em;
@@ -3011,6 +3011,7 @@ ul.wmuSliderPagination {
 	}
 	.container {
 		width: 765px;
+		height: 350px;
 	}
 	.modal-dialog {
 		width: 710px;
@@ -3052,7 +3053,7 @@ ul.wmuSliderPagination {
 @media (max-width: 768px){
 	.container {
 		width: 750px;
-		height: 400px;
+		height: 350px;
 	}
 	.w3ls_logo_products_right1:nth-child(3) {
 		margin-right: 1em;
@@ -3185,6 +3186,7 @@ ul.wmuSliderPagination {
 	}
 	.container {
 		width: 710px;
+		height: 350px;
 	}
 	.modal-dialog {
 		width: 650px;
@@ -3204,6 +3206,7 @@ ul.wmuSliderPagination {
 	}
 	.container {
 		width: auto;
+		height: 350px;
 	}
 	.more {
 		margin-right: 29.5em;
