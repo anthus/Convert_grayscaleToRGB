@@ -34,9 +34,10 @@ body a:hover{
 }
 /*-- header --*/
 .fixed{
-	position: fixed;
+	position: relative;
 	top: 0;
 	width: 100%;
+	height: 50px;
 	margin: 0 auto;
 	right:0;
 	z-index:9999;
@@ -94,6 +95,8 @@ input[type="submit"],.w3ls_vegetables ul li a,input[type="reset"],.agileinfo_mai
 }
 .agileits_header{
 	background:#212121;
+	height: 50px;
+
 }
 .w3l_offers{
 	float:right;
@@ -141,6 +144,7 @@ input[type="submit"],.w3ls_vegetables ul li a,input[type="reset"],.agileinfo_mai
 }
 .w3l_header_left1{
 	float:left;
+	height: 42px;
 }
 .w3l_header_left1 h2 a{
 	font-size: .74em;
@@ -2676,6 +2680,7 @@ ul.wmuSliderPagination {
 	}
 	.container {
 		width: 815px;
+		height: auto;
 	}
 	.w3ls_logo_products_right1:nth-child(3) {
 		margin-right: 1em;
@@ -3047,6 +3052,7 @@ ul.wmuSliderPagination {
 @media (max-width: 768px){
 	.container {
 		width: 750px;
+		height: 400px;
 	}
 	.w3ls_logo_products_right1:nth-child(3) {
 		margin-right: 1em;

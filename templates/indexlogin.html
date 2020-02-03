@@ -16,9 +16,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } 
 		</script>
 
-	<!-- //for-magil list -->
-	<link type="text/css" rel="stylesheet" href="static/css/magicscroll.css" media="screen" />
-	<script type="text/javascript" src="static/css/magicscroll.js"></script>
+
 
 	<!-- //for-mobile-apps -->
 	<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -170,47 +168,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- header -->
 	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
-	<div class="agileits_header">
+	<div class="agileits_header" style="height: 44px;">
 		<div class="w3l_offers">
-			<a href="products.html">با ما رنگی شوید!!</a>
+			<a href="products.html" style="height: 44px;">با ما رنگی شوید!!</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
 				<input type="text" name="Product" value="
-جستجو محصول ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}"
-					required="">
+جستجو محصول ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header">
+		<div class="product_list_header">  
 			<div style="cursor: pointer;">
-				<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i
-						class="badge badge-notify my-cart-badge"></i></span>
+				<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i class="badge badge-notify my-cart-badge"></i></span>
 			</div>
 		</div>
 		<div class="w3l_header_left">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"
-							aria-hidden="true"></i><span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<form action="/register" method="get">
+								<form action="/register" method="get" >
 									<li><a> {{user.name}} </a></li>
 									<li><a id="v1"> {{user.validity}} : اعتبار </a></li>
 									<li><a href="/profile">مشخصات فردی</a> </li>
 									<li><a href="/Logout">خروج</a></li>
-
 								</form>
 							</ul>
-						</div>
-					</div>
+						</div>                  
+					</div>	
 				</li>
 			</ul>
 		</div>
-		<div class="w3l_header_left1">
-			<h2><a href="mail.html">تماس با ما</a></h2>
+		<div class="w3l_header_left1" style="height: 40px; margin-top: 0px;">
+			<h2 style="margin-top: 0px;height: 44px; font-size: 28px;"><a href="mail.html">تماس با ما</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -433,7 +427,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div>
 					<video id="video5" controls width="200px" height="150px">
-						<source id="vid" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid5" src="../static/ColorizedVideo.mp4" type="video/mp4">
 						<source id="vid_5" src="../static/ColorizedVideo.ogg" type="video/ogg">
 						<script>
 							username = document.getElementById("u1").innerHTML;

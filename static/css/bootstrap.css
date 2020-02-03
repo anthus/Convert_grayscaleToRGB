@@ -6320,6 +6320,7 @@ button.close {
 .modal-footer:after {
   display: table;
   content: " ";
+  overflow: auto;
 }
 .clearfix:after,
 .dl-horizontal dd:after,
@@ -6337,6 +6338,7 @@ button.close {
 .panel-body:after,
 .modal-footer:after {
   clear: both;
+  overflow: auto;
 }
 .center-block {
   display: block;
