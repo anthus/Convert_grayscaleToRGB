@@ -1,0 +1,374 @@
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>سایت فروشگاهی</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+				<a href="products.html">با ما  رنگی شوید !!</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="
+جستجو محصول ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<div style="cursor: pointer;">
+				<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i class="badge badge-notify my-cart-badge"></i></span>
+			</div>
+		</div>
+		<div class="w3l_header_left">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li> <a href="/Logout">خروج</a></li>  
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_left1">
+			<h2><a href="mail.html">تماس با ما</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- script-for sticky-nav -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_right">
+				<img src="static/images/logo.png" alt="" >
+			</div>
+			<div class="w3ls_logo_products_right1">
+				<ul class="special_items">
+					<li><a href="events.html">رویدادها</a><i>/</i></li>
+					<li><a href="about.html">درباره ما</a><i>/</i></li>
+					<li><a href="products.html">
+بهترین تخفیف</a><i>/</i></li>
+					<li><a href="services.html">خدمات</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_right1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>09337509134</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:Mjavadzn@gmail.com">Mjavadzn@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">صفحه اصلی</a><span>|</span></li>
+				<li>ورود/ ثبت نام</li>
+			</ul>
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_right">
+
+		</div>
+		<div class="w3l_banner_nav_left">
+<!-- login -->
+		<div class="w3_login">
+			<h3>ورود/ ثبت نام</h3>
+			<div class="w3_login_module">
+				<div class="module form-module">
+				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+					<div class="tooltip">مرا کلیک کن</div>
+				  </div>
+				  <div class="form">
+					<h2>
+وارد حساب کاربری خود شوید</h2>
+					<form action="/checklogin" method="post">
+					  <input type="text" name="user_name" placeholder="نام کاربری" required=" ">
+					  <input type="password" name="password" placeholder="رمز عبور" required=" ">
+					  <input type="submit" value="ورود">
+					</form>
+				  </div>
+				  <div class="form">
+					<h2>ایجاد یک حساب کاربری</h2>
+					<form action="/register" method="post">
+					<input type="text" name="name" placeholder="نام " required=" ">
+					  <input type="text" name="user_name" placeholder="نام کاربری" required=" ">
+					  <input type="password" name="password" placeholder="رمز عبور" required=" ">
+					  <input type="email" name="email_address" placeholder="ایمیل" required=" ">
+					  <input type="text" name="Phone" placeholder="تلفن" required=" ">
+					  <input type="submit" value="ثبت نام">
+					</form>
+				  </div>
+				  <div class="cta"><a href="#">رمز عبور خود را فراموش کرده اید؟</a></div>
+				</div>
+			</div>
+			<script>
+				$('.toggle').click(function(){
+				  // Switches the Icon
+				  $(this).children('i').toggleClass('fa-pencil');
+				  // Switches the forms  
+				  $('.form').animate({
+					height: "toggle",
+					'padding-top': 'toggle',
+					'padding-bottom': 'toggle',
+					opacity: "toggle"
+				  }, "slow");
+				});
+			</script>
+		</div>
+<!-- //login -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!-- newsletter-top-serv-btm -->
+	<div class="newsletter-top-serv-btm">
+		<div class="container">
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+				<h3>
+
+لورم ایپسوم یا طرح‌نما</h3>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				</div>
+				<h3>
+
+لورم ایپسوم یا طرح‌نما</h3>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+				</div>
+				<h3>
+
+لورم ایپسوم یا طرح‌نما</h3>
+				<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter-top-serv-btm -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_right">
+				<h3>برای دریافت خبرنامه ما ثبت نام کنید</h3>
+			</div>
+			<div class="w3agile_newsletter_left">
+				<form action="#" method="post">
+					<input type="email" name="ایمیل" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="مشترک در حال حاضر">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter -->
+<!-- footer -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<div class="footer">
+	<div class="container" dir=ltr>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>اطلاعات</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="events.html">رویدادها</a></li>
+				<li><a href="about.html">درباره ما</a></li>
+				<li><a href="services.html">خدمات</a></li>
+				<li><a href="short-codes.html">
+کدهای کوتاه</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>اطلاعات</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="faqs.html">
+پرسش و پاسخ</a></li>
+				<li><a href="privacy.html">
+سیاست حفظ حریم خصوصی</a></li>
+				<li><a href="privacy.html">
+شرایط استفاده</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+		
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			
+		</div>
+		<div class="clearfix"> </div>
+		<div class="agile_footer_grids">
+			<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+				<div class="w3_footer_grid_bottom">
+					<h4>
+100٪ پرداخت امن</h4>
+					<img src="images/card.png" alt=" " class="img-responsive" />
+				</div>
+			</div>
+			<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+				<div class="w3_footer_grid_bottom">
+					<h5>ارتباط با ما</h5>
+					<ul class="agileits_social_icons">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="wthree_footer_copy">
+			<p>کلیه حقوق مادی و معنوی برای  <b> محمد جواد بیات و علی ذالنور </b>  می باشد </p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!-- Bootstrap Core JavaScript -->
+<script src="static/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<script type="text/javascript" id="snipcart" src="static/js/snipcart.js" data-api-key="ZGQxNzVjZTItOWRmNS00YjJhLTlmNGUtMDE4NjdiY2RmZGNj"></script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<script type='text/javascript' src="static/js/jquery.mycart.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+	  
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      affixCartIcon: true,
+      checkoutCart: function(products) {
+        $.each(products, function(){
+          console.log(this);
+        });
+      },
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      getDiscountPrice: function(products) {
+        var total = 0;
+        $.each(products, function(){
+          total += this.quantity * this.price;
+        });
+        return total * 1;
+      }
+    });
+
+  });
+  </script>
+</body>
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+</html>

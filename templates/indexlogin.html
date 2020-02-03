@@ -1,0 +1,624 @@
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Be Colorful</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<script>  document.getElementById("loader").style.visibility = "hidden";</script>
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } 
+		</script>
+
+	<!-- //for-magil list -->
+	<link type="text/css" rel="stylesheet" href="static/css/magicscroll.css" media="screen" />
+	<script type="text/javascript" src="static/css/magicscroll.js"></script>
+
+	<!-- //for-mobile-apps -->
+	<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome icons -->
+	<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- //font-awesome icons -->
+	<!-- js -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<link
+		href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+	<script type="text/javascript" src="static/js/easing.js"></script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<script>  document.getElementById("loader").style.visibility = "hidden";</script>
+	<!-- start-smoth-scrolling -->
+
+	<!-- flash erorr -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		/* Create three equal columns that floats next to each other */
+		.column1 {
+			float: left;
+			width: 45%;
+			align-content: center;
+			align-items: center;
+			padding: 80px;
+			height: 600px;
+			/* Should be removed. Only for demonstration */
+		}
+
+		.column2 {
+			float: left;
+			width: 10%;
+			align-content: center;
+			align-items: center;
+			padding: 10px;
+			height: 600px;
+			/* Should be removed. Only for demonstration */
+		}
+
+		.column3 {
+			float: left;
+			width: 45%;
+			align-content: center;
+			align-items: center;
+			padding: 80px;
+			padding-top: 112px;
+			height: 600px;
+			/* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row2:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.loader {
+			border: 16px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 16px solid blue;
+			border-right: 16px solid green;
+			border-bottom: 16px solid red;
+			border-left: 16px solid pink;
+			width: 120px;
+			height: 120px;
+			-webkit-animation: spin 2s linear infinite;
+			animation: spin 2s linear infinite;
+		}
+
+		@-webkit-keyframes spin {
+			0% {
+				-webkit-transform: rotate(0deg);
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		/* Smagic video show */
+		.horizontal-scroll-wrapper {
+			display: block;
+			float: center;
+			margin-right: 1000px;
+			top: 0;
+			left: 0;
+			/* padding-right: 300px; */
+			width: 200px;
+			max-height: 1000px;
+			margin: 1000;
+			background: rgb(255, 255, 255);
+			overflow-y: auto;
+			overflow-x: hidden;
+			transform: rotate(-90deg) translateY(-80px);
+			transform-origin: right top;
+		}
+
+		.horizontal-scroll-wrapper>div {
+			
+			display: block;
+			padding: 50px;
+			background: rgb(255, 255, 255);
+			transform: rotate(90deg);
+			transform-origin:center;
+			
+		}
+
+		.squares {
+			padding: 50px 0 0 0;
+
+		}
+
+		.squares>div {
+			width: 200px;
+			height: 250px;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- header -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">با ما رنگی شوید!!</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="
+جستجو محصول ..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}"
+					required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">
+			<div style="cursor: pointer;">
+				<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i
+						class="badge badge-notify my-cart-badge"></i></span>
+			</div>
+		</div>
+		<div class="w3l_header_left">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"
+							aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<form action="/register" method="get">
+									<li><a> {{user.name}} </a></li>
+									<li><a id="v1"> {{user.validity}} : اعتبار </a></li>
+									<li><a href="/profile">مشخصات فردی</a> </li>
+									<li><a href="/Logout">خروج</a></li>
+
+								</form>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_left1">
+			<h2><a href="mail.html">تماس با ما</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- script-for sticky-nav -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<script>
+		$(document).ready(function () {
+			var navoffeset = $(".agileits_header").offset().top;
+			$(window).scroll(function () {
+				var scrollpos = $(window).scrollTop();
+				if (scrollpos >= navoffeset) {
+					$(".agileits_header").addClass("fixed");
+				} else {
+					$(".agileits_header").removeClass("fixed");
+				}
+			});
+
+		});
+	</script>
+	<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_right">
+				<img src="static/images/logo.png" alt="">
+			</div>
+			<div class="w3ls_logo_products_right1">
+				<ul class="special_items">
+					<li><a href="events.html">رویدادها</a><i>/</i></li>
+					<li><a href="about.html">درباره ما</a><i>/</i></li>
+					<li><a href="services.html">خدمات</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_right1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>09337509134</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a
+							href="mailto:mjavadzn@gmail.com">Mjavadzn@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_right">
+
+		</div>
+		<div class="w3l_banner_nav_left">
+			<section class="slider">
+				<div class="flexslider" dir=ltr>
+					<ul class="slides">
+						<li>
+							<div class="w3l_banner_nav_left_banner">
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_left_banner1">
+								<div class="more">
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_nav_left_banner2">
+
+								<div class="more">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- flexSlider -->
+			<link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="screen" property="" />
+			<script defer src="static/js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+				$(window).load(function () {
+					$('.flexslider').flexslider({
+						animation: "slide",
+						start: function (slider) {
+							$('body').removeClass('loading');
+						}
+					});
+				});
+			</script>
+			<!-- //flexSlider -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- banner -->
+
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<div style="background-color: rgb(255, 255, 255); height: 500px;">
+		<form action="/process" method="POST" enctype="multipart/form-data" name="myform" id="myform">
+
+			<div class="row2" style="align-content: center;">
+				<div class="column1" style="background-color:rgb(255, 255, 255); align-content: center;">
+					<input type="file" accept="video/*" name="file" id="file" onchange="loadFile(event)"
+						style="display: none;">
+					<p> <label for="file" style=" margin-bottom: 15px ; font-size: 27px; "> <b> برای آپلود فیلم سیاه و
+								سفید خود <a>اینجا</a> کلیک کنید </b> </label></p>
+					<video controls autoplay id="output" type="video/x-matroska;" codecs="theora,vorbis" width="450px"
+						height="300px"> </video>
+				</div>
+
+				<div class="column2" style="background-color:rgb(255, 255, 255); align-content: center;">
+					<input type="submit" onclick="enable_disable()" value="تبدیل کن " 
+						style=" width: 130px; height: 70px; background-color: chartreuse; font-size: larger; margin-top: 240px;">
+					<div class="loader" id="loader" style="margin-right: 294px;"></div>
+				</div>
+				<div class="column3" style="background-color:rgb(255, 255, 255);align-content: center;">
+					<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان -->
+					<p id="u1" style="visibility: hidden">{{user.username}}</p>
+					<video id="video1" controls autoplay width="450px" height="300px" style="align-content: center;">
+						<source id="src1" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="src2" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							validity = 100 - parseInt(document.getElementById("v1").innerHTML);
+							document.getElementById('src1').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(validity) + ".mp4";
+							document.getElementById('src2').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(validity) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+
+				</div>
+
+				<script>
+					function enable_disable() {
+						//document.getElementById("loader").style.display = "true";
+						document.getElementById("loader").style.visibility = "true";
+					}
+					var loadFile = function (event) {
+						user = parseInt(document.getElementById("v1").innerHTML);
+						user = user - 1;
+						document.getElementById("form_input").value = user;
+						var video = document.getElementById('output');
+						video.src = URL.createObjectURL(event.target.files[0]);
+						video.play();
+					}
+				</script>
+
+				<input id="form_input" type="text" name="val" style="visibility: hidden"> </input>
+		</form>
+
+	</div>
+	<div>
+		{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+		{% for category, message in messages %}
+		<div class="alert alert-warning"
+			style="font-size: 30px; align-content: center; margin-right: 600px; margin-left: 600px; text-align: center;">
+			<strong>Warning!</strong> {{ message }} <a href="#" class="alert-link"></a>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+	</div>
+
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+
+
+	<div class="top-brands">
+		<div class="container">
+			<h3>فیلم های رنگی شده </h3>
+			<div class="horizontal-scroll-wrapper squares">
+
+				<div>
+					<video id="video1" controls width="200px" height="150px">
+						<source id="vid1" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_1" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid1').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(1) + ".mp4";
+							document.getElementById('vid_1').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(1) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<div>
+					<video id="video2" controls width="200px" height="150px">
+						<source id="vid2" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_2" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid2').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(2) + ".mp4";
+							document.getElementById('vid_2').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(2) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<div>
+					<video id="video3" controls width="200px" height="150px">
+						<source id="vid3" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_3" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid3').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(3) + ".mp4";
+							document.getElementById('vid_3').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(3) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<div>
+					<video id="video4" controls width="200px" height="150px">
+						<source id="vid4" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_4" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid4').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(4) + ".mp4";
+							document.getElementById('vid_4').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(4) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<div>
+					<video id="video5" controls width="200px" height="150px">
+						<source id="vid" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_5" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid5').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(5) + ".mp4";
+							document.getElementById('vid_5').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(5) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<div>
+					<video id="video6" controls width="200px" height="150px">
+						<source id="vid6" src="../static/ColorizedVideo.mp4" type="video/mp4">
+						<source id="vid_6" src="../static/ColorizedVideo.ogg" type="video/ogg">
+						<script>
+							username = document.getElementById("u1").innerHTML;
+							document.getElementById('vid6').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(6) + ".mp4";
+							document.getElementById('vid_6').src = "../static/UserColorizedVideos/" + username + "/ColorizedVideo" + String(6) + ".ogg";
+						</script>
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- //top-brands -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_right">
+				<h3>برای دریافت خبرنامه ما ثبت نام کنید</h3>
+			</div>
+			<div class="w3agile_newsletter_left">
+				<form action="#" method="post">
+					<input type="email" name="ایمیل" value="Email" onfocus="this.value = '';"
+						onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="مشترک در حال حاضر">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //newsletter -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container" dir=ltr>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>اطلاعات</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="events.html">رویدادها</a></li>
+					<li><a href="about.html">درباره ما</a></li>
+					<li><a href="services.html">خدمات</a></li>
+					<li><a href="short-codes.html">
+							کدهای کوتاه</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>اطلاعات</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">
+							پرسش و پاسخ</a></li>
+					<li><a href="privacy.html">
+							سیاست حفظ حریم خصوصی</a></li>
+					<li><a href="privacy.html">
+							شرایط استفاده</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>
+							100٪ پرداخت امن</h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>ارتباط با ما</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>کلیه حقوق مادی و معنوی برای <b> محمد جواد بیات و علی ذوالنور </b> می باشد </p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+
+	
+	<!-- //here ends scrolling icon -->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<script type='text/javascript' src="static/js/jquery.mycart.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var goToCartIcon = function ($addTocartBtn) {
+				var $cartIcon = $(".my-cart-icon");
+				var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+				$addTocartBtn.prepend($image);
+				var position = $cartIcon.position();
+				$image.animate({
+
+				}, 500, "linear", function () {
+					$image.remove();
+				});
+			}
+
+			$('.my-cart-btn').myCart({
+				classCartIcon: 'my-cart-icon',
+				classCartBadge: 'my-cart-badge',
+				affixCartIcon: true,
+				checkoutCart: function (products) {
+					$.each(products, function () {
+						console.log(this);
+					});
+				},
+				clickOnAddToCart: function ($addTocart) {
+					goToCartIcon($addTocart);
+				},
+				getDiscountPrice: function (products) {
+					var total = 0;
+					$.each(products, function () {
+						total += this.quantity * this.price;
+					});
+					return total * 1;
+				}
+			});
+
+		});
+	</script>
+	<script>  document.getElementById("loader").style.visibility = "hidden";</script>
+</body>
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+
+</html>
