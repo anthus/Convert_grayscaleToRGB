@@ -8,6 +8,9 @@ import subprocess
 import time
 from flask.helpers import flash
 from Execute import main_Execute
+from VideoTagGenerator import distinct_tag
+from VideoTagGenerator import make_tag
+
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/ConvertGrayscaleToRgb"
 mongo = PyMongo(app)
@@ -18,6 +21,9 @@ def index():
     if session.get('username') != None:
         username = session['username']["username"]
         user = mongo.db.Users.find_one({"username" : username})
+        #Generate video tag to show colorized videos
+        first_part, end_part= distinct_tag()
+        make_tag(session['username']["username"], first_part, end_part)
         return render_template('indexlogin.html', user = user)
     return render_template('index.html')
 
@@ -47,7 +53,10 @@ def checklogin():
     checkUser  = {"username" : user_name, "password" : password}
     user = mongo.db.Users.find_one(checkUser, {"_id":0})
     if user:   
-        session['username'] = user 
+        session['username'] = user
+        #Generate video tag to show colorized videos
+        first_part, end_part= distinct_tag()
+        make_tag(session['username']["username"], first_part, end_part)
         return render_template('indexlogin.html', user = user)
     else:
         html = "<center>Your username or password aren't correct <a href = ""http://localhost:5000"">back</a></center>"
@@ -84,7 +93,7 @@ def Upload():
                     #Execute VideoColorizer.py
                     main_Execute(session['username']["username"], session['username']['validity'])
             else:
-                flash('please load a file', 'warning')
+                flash('Please load a file', 'warning')
     return redirect(url_for('index'))
     
 
