@@ -17,7 +17,7 @@ def distinct_tag():
 
 def make_tag(username, first_part, end_part):
     #first part
-    first_part.append('\t<div class="top-brands">\n')
+    first_part.append('\t<div class="top-brands-login">\n')
     first_part.append('\t\t<div class="container">\n')
     first_part.append('\t\t\t<h3>فیلم های رنگی شده </h3>\n')
     #middle part

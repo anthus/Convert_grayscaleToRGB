@@ -1,0 +1,23 @@
+<html>
+
+<head></head>
+
+<body>
+    <div dir="rtl">
+        <p style="text-align: center; margin-top: 5em; font-size: xx-large;font-family: fantasy;">{{user.name}}عزیز به اعتبار شما 100 واحد اضافه گردید. </p></label>
+    </br></br>
+        <p style="text-align: center; font-size: x-large; color: orangered;">برای خروج بر روی دکمه بازگشت کلیک کنید.</p>
+        
+        <p id="val100" style="visibility: hidden;">{{user.validity}}</p>
+        <form action="/Val_inc" method="POST">
+            <input type="submit" value="بازگشت" style=" width: 130px; height: 70px; background-color: chartreuse; font-size: larger; margin: 4em 31em 0 0;">
+            <input id="form_input" type="text" name="val" style="visibility: hidden"> </input>
+            <script>
+                valid = parseInt(document.getElementById("val100").innerHTML) + 100;
+                document.getElementById("form_input").value = valid;
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

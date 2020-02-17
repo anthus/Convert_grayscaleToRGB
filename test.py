@@ -77,7 +77,7 @@ def Logout():
       session.pop('username',None)
       return redirect(url_for('index'))
 
-@app.route('/process' , methods = ['POST' ,'GET'] )
+@app.route('/process', methods = ['POST' ,'GET'] )
 def Upload():
     if session.get('username') != None:
         if request.method == 'POST':
@@ -92,11 +92,26 @@ def Upload():
                     grayvideo.save(os.path.join(uploads_dir, secure_filename(filmName)))
                     #Execute VideoColorizer.py
                     main_Execute(session['username']["username"], session['username']['validity'])
+                else:
+                    flash('Your Credit has expired.' + "\n" + 'Please increase your credit', 'warning')
             else:
-                flash('Please load a file', 'warning')
+                flash('Please load a file.', 'warning')
     return redirect(url_for('index'))
     
-
+@app.route('/VIHtml', methods = ['GET'])
+def VIHtml():
+    if session['username'] != None:
+        username = session['username']["username"]
+        user = mongo.db.Users.find_one({"username" : username})
+        return render_template('validity_increase.html', user = user)
+    return redirect(url_for('index'))
+    
+@app.route('/Val_inc', methods = ['GET','POST'])
+def Val_inc():
+    if session['username'] != None:
+        session['username']['validity'] = request.form['val']
+        mongo.db.Users.update({"username": session['username']["username"]}, {"$set":{"validity" : request.form['val']}}) 
+    return redirect(url_for('index'))
 
 if __name__ == "__main__":
     app.run(debug=True)

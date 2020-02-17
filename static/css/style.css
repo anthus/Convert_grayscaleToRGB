@@ -84,7 +84,6 @@ i.badge.badge-notify.my-cart-badge {
 .product_list_header span {
     font-size: 1em;
     color: #fff;
-	top: 1em;
 }
 input[type="submit"],.w3ls_vegetables ul li a,input[type="reset"],.agileinfo_mail_grid_right ul li a,.events_bottom_right2 ul li a,.w3ls_service_grids1_left a,ul.agileits_social_icons li a,.w3l_banner_nav_left_banner_pet a,.w3ls_w3l_banner_nav_left_grid_head_grid ul li a,.products-breadcrumb ul li a,.w3_footer_grid ul li a,.w3l_fresh_vegetables_grid ul li a,.wthree_footer_copy p a,.agile_top_brand_right_grid1 .button,.w3ls_logo_products_right1 ul.special_items li a,.w3ls_logo_products_right1 ul.phone_email li a{
 	transition: .5s ease-in;
@@ -172,7 +171,7 @@ ul.dropdown-menu.drp-mnu li a i {
     padding-right: 1em;
 }
 .logo_products{
-	padding:4em 0 1em;
+	padding:1em 0 1em;
 }
 .w3ls_logo_products_right{
 	float:right;
@@ -427,7 +426,7 @@ ul.dropdown-menu.drp-mnu li a i {
 }
 /*-- //banner --*/
 /*-- banner_bottom --*/
-.banner_bottom,.top-brands,.fresh-vegetables,.w3l_banner_nav_left_banner3_btm,.testimonials,.team,.newsletter-top-serv-btm,.w3ls_w3l_banner_nav_left_grid_sub{
+.banner_bottom,.top-brands, .top-brands-login, .fresh-vegetables,.w3l_banner_nav_left_banner3_btm,.testimonials,.team,.newsletter-top-serv-btm,.w3ls_w3l_banner_nav_left_grid_sub{
 	padding:5em 0 !important;
 }
 .wthree_banner_bottom_right {
@@ -505,14 +504,14 @@ ul.dropdown-menu.drp-mnu li a i {
     top: -1%;
     left: 10%;
 }
-.top-brands h3,.fresh-vegetables h3,.mail h3,.testimonials h3,.w3_login h3,.w3ls_w3l_banner_nav_left_grid h3,h3.title,.faq h3,.services h3,.about h3,.team h3,.events h3{
+.top-brands h3, .top-brands-login h3,.fresh-vegetables h3,.mail h3,.testimonials h3,.w3_login h3,.w3ls_w3l_banner_nav_left_grid h3,h3.title,.faq h3,.services h3,.about h3,.team h3,.events h3{
 	text-align:center;
 	color:#212121;
 	padding-bottom:.5em;
 	position:relative;
 	font-size: 2.5em;
 }
-.top-brands h3:after,.fresh-vegetables h3:after,.mail h3:after,.w3_login h3:after,.testimonials h3:after,.w3ls_w3l_banner_nav_left_grid h3:after,h3.title:after,.faq h3:after,.services h3:after,.about h3:after,.team h3:after,.events h3:after{
+.top-brands h3:after, .top-brands-login h3:after,.fresh-vegetables h3:after,.mail h3:after,.w3_login h3:after,.testimonials h3:after,.w3ls_w3l_banner_nav_left_grid h3:after,h3.title:after,.faq h3:after,.services h3:after,.about h3:after,.team h3:after,.events h3:after{
 	content: '';
     background: #FA1818;
     height: 2px;
@@ -543,7 +542,12 @@ ul.dropdown-menu.drp-mnu li a i {
 	margin:3em 0 0;
 }
 .top-brands{
-    background: #ffffff;
+	background: #ffffff;
+}
+.top-brands-login{
+	background: #ffffff;
+	margin-bottom: -50em;
+	margin-top: -20em;
 }
 .agile_top_brand_right_grid1 p{
 	color:#212121;
@@ -2512,10 +2516,10 @@ ul.wmuSliderPagination {
 	.top_brand_right {
 		padding-right: 0;
 	}
-	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
+	.top-brands h3,.top-brands-login h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 2.3em;
 	}
-	.banner_bottom, .top-brands, .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
+	.banner_bottom, .top-brands, .top-brands-login, .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
 		padding: 4em 0 !important;
 	}
 	.agile_footer_grids_w3_footer {
@@ -2641,7 +2645,7 @@ ul.wmuSliderPagination {
 	.w3l_banner_nav_left_banner3_btml h4 {
 		font-size: 1.3em;
 	}
-	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
+	.top-brands h3, .top-brands-login h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 2em;
 	}
 	.w3ls_w3l_banner_nav_left_grid1 h6 {
@@ -3040,7 +3044,7 @@ ul.wmuSliderPagination {
 		padding: 10px 40px;
 		font-size: 14px;
 	}
-	.banner_bottom, .top-brands, .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
+	.banner_bottom, .top-brands, .top-brands-login, .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
 		padding: 3em 0 !important;
 	}
 	.agileinfo_single_right {
@@ -3409,13 +3413,13 @@ ul.wmuSliderPagination {
 		margin-right: 18em;
 		width: 40%;
 	}
-	.banner_bottom, .top-brands, .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
+	.banner_bottom, .top-brands, .top-brands-login,  .fresh-vegetables, .w3l_banner_nav_left_banner3_btm, .testimonials, .team, .newsletter-top-serv-btm, .w3ls_w3l_banner_nav_left_grid_sub {
 		padding: 2em 0 !important;
 	}
 	.wthree_banner_bottom_right {
 		width: 90%;
 	}
-	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
+	.top-brands h3, .top-brands-login h3, .top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 1.8em;
 	}
 	.top_brand_right,.w3ls_w3l_banner_right {
@@ -3824,7 +3828,7 @@ ul.wmuSliderPagination {
 	.view p {
 		padding: 10px 10px 0px;
 	}
-	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
+	.top-brands h3, .top-brands-login h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 1.6em;
 	}
 	.w3ls_service_grids {
@@ -4018,7 +4022,7 @@ ul.wmuSliderPagination {
 	.agile_about_grid_right ol {
 		padding-right: 15px;
 	}
-	.top-brands h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
+	.top-brands h3, .top-brands-login h3, .fresh-vegetables h3, .mail h3, .testimonials h3, .w3_login h3, .w3ls_w3l_banner_nav_left_grid h3, h3.title, .faq h3, .services h3, .about h3, .team h3, .events h3 {
 		font-size: 1.49em;
 	}
 	.agileits_team_grids {

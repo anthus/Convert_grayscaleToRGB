@@ -23,18 +23,7 @@ ap.add_argument("-w", "--width", type=int, default=500,
 	help="input width dimension of frame")
 args = vars(ap.parse_args())
 
-# initialize a boolean used to indicate if either a webcam or input
-# video is being used
-##webcam = not args.get("input", False)
-##
-### if a video path was not supplied, grab a reference to the webcam
-##if webcam:
-##	print("[INFO] starting video stream...")
-##	vs = VideoStream(src=0).start()
-##	time.sleep(2.0)
-##
-### otherwise, grab a reference to the video file
-##else:
+
 print("[INFO] opening video file...")
 vs = cv2.VideoCapture('video//GrayscaleVideo.mp4')
 
